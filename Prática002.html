@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 2 | Bootstrap - Moodle</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/Estilo-Prática002.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Nº</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Endereço</th>
+                    <th scope="col">Data de Nascimento</th>
+                    <th scope="col">Estado civil</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Marta Helena José</td>
+                    <td>Rua das Alfavacas, nº 12</td>
+                    <td>08/08/1980</td>
+                    <td>Casada</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Theodoro José</td>
+                    <td>Rua das Alfavacas, nº 12</td>
+                    <td>17/02/1975</td>
+                    <td>Casado</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Theo José Filho</td>
+                    <td>Rua das Alfavacas, nº 12</td>
+                    <td>20/08/2001</td>
+                    <td>Solteiro</td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Júlia Helena José</td>
+                    <td>Rua das Alfavacas, nº 12</td>
+                    <td>11/12/2006</td>
+                    <td>Solteira</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr class="my-4">
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="seuEmail">Endereço de e-mail</label>
+                <input type="email" id="seuEmail" class="form-control" aria-describedby="ajudaEmail"
+                    placeholder="Seu e-mail">
+                <small id="emailHelp" class="form-text text-muted">Não compatilhamos dados de usuários.</small>
+            </div>
+            <div class="form-group">
+                <label for="suaSenha">Senha</label>
+                <input class="form-control" type="password" id="suaSenha" placeholder="Senha">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" id="Check" class="form-check-input">
+                <label for="Check" class="form-check-label">Mantenha-me conectado</label>
+            </div>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-primary">Conectar</button>
+              </div>
+        </form>
+    </div>
+    <hr class="my-4">
+    <div class="container">
+        <form class="form-inline">
+            <div>
+                <label for="seuEmail" class="mr-sm-2">Endereço de e-mail:</label>
+                <input type="email" placeholder="Informe seu e-mail" id="email" class="form-control mb-2 mr-2">
+                &nbsp;
+                <label for="suaSenha" class="mr-sm-2">Senha:</label>
+                <input type="password" id="suaSenha" class="form-control mb-2 mr-sm-2" placeholder="Informe sua senha">
+                &nbsp;
+                <label for="status" class="mr-sm-2">Escolha o status:</label>
+                <select name="status" id="status" class="form-control mb-2 mr-sm-2">
+                    <option value="blank"></option>
+                    <option value="online" class="text-success">Disponível</option>
+                    <option value="ocupado" class="text-danger">Ocupado</option>
+                    <option value="ausente" class="text-warning">Ausente</option>
+                    <option value="offline" class="text-secondary">Offline</option>
+                </select>
+            </div>
+            <div class="form-check mb-2 mr-sm-2">
+                <label for="Check" class="form-check-label"><input type="checkbox" class="form-check-input">
+                    Mantenha-me conectado
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2">Conectar</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./JS/Script-Prática002.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática 3 | Bootstrap - Moodle</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/Estilo-Prática003.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./Prática003.html"><img src="../dev.Point_Tech (logo).png" alt="Logo"
+                    width="50" height="36"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#executNavbar"
+                aria-controls="collapseNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="executNavbar">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Página Inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Lojas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Fale Conosco</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carrinho</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <form class="container">
+        <label for="fname">Nome:</label></br>
+        <input type="text" id="fname" name="fname" class="form-control border border-primary"></br></br>
+        <label for="lname">Sobrenome:</label></br>
+        <input type="text" id="lname" name="lname" class="form-control border border-primary"></br></br>
+        <label for="cpf">Informe o CPF:</label></br>
+        <input type="text" id="cpf" maxlength="11" class="form-control border border-primary"></br></br>
+
+        <div>
+            <span>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="masculino">Masculino</label>&nbsp;
+            </span>
+            <span>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="feminino">Feminino</label>&nbsp;
+            </span>
+            <span>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="outros">Outros</label>
+            </span>
+        </div>
+
+        <div>
+            <label for="estados" class="text-primary">Estado:</label>
+            <select name="estados" id="estados" class="text-white bg-secondary">
+                <option value="null">----</option>
+                <option value="es">Espírito Santo</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="sp">São Paulo</option>
+            </select>
+        </div></br>
+
+        <div>
+            <input type="checkbox" id="contatoEmail" name="contatoEmail" value="sempreContato">
+            <label for="contatoEmail" class="text-info">Aceito receber e-mails com promoções e dicas.</label></br>
+            <input type="checkbox" id="contatoEmailNovosProdutos" name="contatoEmailNovosProdutos"
+                value="emailNovosProdutos">
+            <label for="emailNovosProdutos" class="text-info">Aceito receber e-mails com atualizações do catálogo de
+                produtos e lançamentos.</label></br>
+            <span class="d-grid gap-2">
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enviarDados">
+                    Enviar
+                </button>
+                <div class="modal fade" id="enviarDados" tabindex="-1" aria-labelledby="confirmaCadastro"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="confirmaCadastro">Cadastro realizado!</h5>
+                                <button type="reset" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Dados registrados na plataforma, verifique seu e-mail para confirmarmos sua identidade.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="reset" class="btn btn-secondary bg-success" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="reset" class="btn btn-outline-warning">Redefinir</button>
+            </span>
+        </div><br><br>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./JS/Script-Prática003.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.container {
+    background-color: lightpink;
+    color: indigo;
+}
+
+.container-fluid {
+    background-color: springgreen;
+    color: steelblue;
+}
+
+.alert {
+    font-weight: bold;
+}

@@ -1,0 +1,18 @@
+Aplicação de classes em bootstrap:
+    . Prática 001
+    - Container;
+    - Grid;
+    - Cores;
+    - Alertas.
+
+    . Prática 002
+    - Tabelas;
+    - Formulários;
+    - Botões.
+    
+    . Prática 003
+    - Navbar;
+    - Modal.
+
+Observação: no Bootstrap 5 (aplicado nesse projeto) algumas classes foram desativadas ou substituídas em
+comparação com o Bootstrap 4, para suprir a falta dessas classes elas foram implementadas na folha de estilo CSS.

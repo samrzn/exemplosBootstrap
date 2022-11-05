@@ -1,0 +1,20 @@
+.table {
+    text-align: justify;
+    vertical-align: center;
+    background-color: #C19A6B;
+    font-weight: 490;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
